@@ -1,0 +1,11 @@
+{
+    "nome_paciente": "Miguel Ferreira",
+    "medicamentos": [
+        {
+            "nome": "Paracetamol",
+            "dosagem_mg": 200.0,
+            "turno": "Tarde",
+            "instrucoes": ""
+        }
+    ]
+}
