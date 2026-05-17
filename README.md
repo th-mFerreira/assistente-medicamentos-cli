@@ -104,3 +104,90 @@ Desenvolvido e mantido por [Miguel Ferreira].
 Projeto arquitetado como requisito de excelência para a disciplina de Bootcamp II - Engenharia de Software.
 
 Código aberto, focado em salvar o recurso mais valioso: o tempo.
+=======
+Para provisionar este software em uma máquina local ou terminal de operação clínico, siga o protocolo de inicialização abaixo.
+
+> ⚠️ **Pré-requisitos de Sistema:** Certifique-se de ter o **[Git](https://git-scm.com/)** e o **[Python 3.12+](https://www.python.org/downloads/)** instalados e configurados no `PATH` da sua máquina antes de prosseguir.
+
+## 1. Clonagem do Repositório
+Faça o download do código-fonte para a sua máquina local acessando o repositório oficial:
+
+git clone https://github.com/th-mFerreira/assistente-medicamentos-cli.git
+
+cd assistente-medicamentos-cli
+
+## 2. Isolamento de Ambiente (Virtual Environment)
+É estritamente recomendado provisionar a aplicação dentro de um ambiente virtual isolado. Isso previne conflitos de dependências com outras aplicações no nível do sistema operacional (SO).
+Selecione a aba correspondente ao seu SO:
+
+🔹 Para ambientes Windows:
+PowerShell
+
+python -m venv venv
+
+.\venv\Scripts\activate
+
+🔹 Para ambientes Linux / macOS (POSIX):
+Bash
+
+python -m venv venv
+
+source venv/bin/activate
+
+O ambiente estará isolado com sucesso quando o prefixo (venv) aparecer no início da linha do seu terminal.
+
+## 3. Resolução de Dependências
+Com o ambiente ativado, atualize o gerenciador de pacotes e instale as dependências rigorosamente fixadas no manifesto corporativo:
+
+
+python -m pip install --upgrade pip
+
+pip install -r requirements.txt
+
+## 4. Inicialização do Sistema
+Execute o ponto de entrada principal para iniciar o motor da Interface de Linha de Comando (CLI):
+
+
+python -m src.app
+
+## 🧪 Garantia de Qualidade (QA & Testing)
+A integridade deste software é considerada crítica e validada de forma contínua. Nossa suíte de testes automatizados cobre sistematicamente os Caminhos Felizes (Happy Paths), Tratamento de Exceções (Error Handling) e Casos Limite (Edge Cases).
+
+Para executar a bateria de testes unitários e de integração de dados:
+
+
+pytest -v
+
+Para inspecionar a padronização, complexidade ciclomática e acurácia do código-fonte (Análise Estática):
+
+
+ruff check .
+
+## 📂 Topologia da Arquitetura
+A estrutura de diretórios foi desenhada sob o padrão arquitetural de Separação de Conceitos (Separation of Concerns - SoC), garantindo alta coesão e baixo acoplamento entre as camadas de dados, domínio e apresentação:
+
+```text
+assistente-medicamentos-cli/
+├── .github/
+│   └── workflows/
+│       └── ci.yml             # Pipeline de Integração Contínua (GitHub Actions)
+├── src/
+│   ├── __init__.py
+│   ├── app.py                 # Camada de Apresentação (CLI Engine & UI)
+│   ├── models.py              # Camada de Domínio (Entidades e Regras de Negócio)
+│   └── persistence.py         # Camada de Infraestrutura (I/O de Dados em JSON)
+├── tests/
+│   ├── __init__.py
+│   ├── test_models.py         # Asserções rigorosas de regras de negócios
+│   └── test_persistence.py    # Asserções de integridade do Banco de Dados
+├── requirements.txt           # Manifesto oficial de dependências do ecossistema
+├── banco_medicamentos.json    # Banco de Dados de estado dinâmico (Ignorado no Git)
+└── README.md                  # Documentação Técnica e Executiva
+```
+
+## 👨‍💻 Autoria e Manutenção
+Desenvolvido, mantido e arquitetado por [Miguel Ferreira].
+
+Projeto submetido como requisito de excelência técnica estrutural para a disciplina de Bootcamp II - Engenharia de Software.
+
+"Código aberto, estruturado para salvar o recurso mais crítico da saúde: o tempo."
