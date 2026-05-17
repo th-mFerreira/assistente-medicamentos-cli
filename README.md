@@ -9,6 +9,9 @@
 
 ---
 
+# 🏥 Assistente de Medicamentos CLI (A.M.C.)
+**🟢 Status:** Online | **🚀 Acesso Rápido:** [Rodar Aplicação no Navegador via Replit](https://replit.com/@miguelfloliveir/assistente-medicamentos-cli)
+
 ## 📖 Visão Executiva (Contexto Clínico)
 
 Em ambientes hospitalares, clínicas de repouso ou no cuidado domiciliar de alta complexidade, a administração de medicamentos exige rigor absoluto. Erros de dosagem, confusão de horários ou a fragmentação do histórico medicamentoso representam riscos severos à segurança e integridade do paciente.
