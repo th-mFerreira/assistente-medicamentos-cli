@@ -6,6 +6,12 @@
             "dosagem_mg": 200.0,
             "turno": "Tarde",
             "instrucoes": ""
+        },
+        {
+            "nome": "Dipirona",
+            "dosagem_mg": 1000.0,
+            "turno": "Manhã",
+            "instrucoes": "Aplicar enquanto dorme"
         }
     ]
 }

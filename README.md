@@ -9,6 +9,9 @@
 
 ---
 
+# 🏥 Assistente de Medicamentos CLI (A.M.C.)
+**🟢 Status:** Online | **🚀 Acesso Rápido:** [Rodar Aplicação no Navegador via Replit](https://replit.com/@miguelfloliveir/assistente-medicamentos-cli)
+
 ## 📖 Visão Executiva (Contexto Clínico)
 
 Em ambientes hospitalares, clínicas de repouso ou no cuidado domiciliar de alta complexidade, a administração de medicamentos exige rigor absoluto. Erros de dosagem, confusão de horários ou a fragmentação do histórico medicamentoso representam riscos severos à segurança e integridade do paciente.
@@ -38,6 +41,70 @@ O projeto segue os princípios de separação de responsabilidades (SoC), garant
 
 ## 🚀 Guia de Implantação (Getting Started)
 
+Para provisionar este software em uma máquina local ou terminal de operação clínico, siga o protocolo abaixo:
+
+### 1. Clonagem do Repositório
+```bash
+git clone https://github.com/th-mFerreira/assistente-medicamentos-cli.git
+cd assistente-medicamentos-cli
+
+2. Isolamento de Ambiente (Virtual Environment)
+É estritamente recomendado rodar a aplicação em um ambiente isolado para evitar conflitos de dependências em nível de sistema operacional.
+
+Bash
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# Linux / macOS
+python -m venv venv
+source venv/bin/activate
+
+3. Instalação de Dependências
+Bash
+pip install --upgrade pip
+pip install -r requirements.txt
+
+4. Inicialização do Sistema
+Bash
+python -m src.app
+🧪 Garantia de Qualidade (QA & Testing)
+A integridade deste software é vitalícia e validada de forma contínua. Nossa suíte de testes cobre os Caminhos Felizes (Happy Paths), Casos de Erro (Error Handling) e Limites de Sistema (Edge Cases).
+
+Para executar a bateria de testes unitários:
+
+Bash
+pytest -v
+Para inspecionar a qualidade e padronização do código-fonte:
+
+Bash
+ruff check .
+📂 Topologia do Projeto
+Abaixo apresentamos a árvore de diretórios do repositório, refletindo um padrão profissional de engenharia de software:
+
+Plaintext
+assistente-medicamentos-cli/
+├── .github/
+│   └── workflows/
+│       └── ci.yml             # Robô de Integração Contínua (GitHub Actions)
+├── src/
+│   ├── __init__.py
+│   ├── app.py                 # Ponto de entrada (Entrypoint) e UI
+│   ├── models.py              # Regras de Negócio e Entidades
+│   └── persistence.py         # Camada de Dados (I/O)
+├── tests/
+│   ├── __init__.py
+│   ├── test_models.py         # Testes de unidade das regras
+│   └── test_persistence.py    # Testes de integração de dados
+├── requirements.txt           # Manifesto de dependências
+├── banco_medicamentos.json    # Banco de dados gerado automaticamente (ignorado no git)
+└── README.md                  # Documentação oficial
+👨‍💻 Autoria e Manutenção
+Desenvolvido e mantido por [Miguel Ferreira].
+Projeto arquitetado como requisito de excelência para a disciplina de Bootcamp II - Engenharia de Software.
+
+Código aberto, focado em salvar o recurso mais valioso: o tempo.
+=======
 Para provisionar este software em uma máquina local ou terminal de operação clínico, siga o protocolo de inicialização abaixo.
 
 > ⚠️ **Pré-requisitos de Sistema:** Certifique-se de ter o **[Git](https://git-scm.com/)** e o **[Python 3.12+](https://www.python.org/downloads/)** instalados e configurados no `PATH` da sua máquina antes de prosseguir.
