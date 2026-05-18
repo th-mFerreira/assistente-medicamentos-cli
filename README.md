@@ -11,6 +11,7 @@
 
 # 🏥 Assistente de Medicamentos CLI (A.M.C.)
 **🟢 Status:** Online | **🚀 Acesso Rápido:** [Rodar Aplicação no Navegador via Replit](https://replit.com/@miguelfloliveir/assistente-medicamentos-cli)
+> **💡 Instrução de uso na Nuvem (Replit):** Como esta é uma aplicação CLI, ao abrir o link acima, clique na opção **"+ Tools & files"** (no centro da tela), selecione **"Shell"** e digite o comando `python -m src.app` para iniciar o sistema no terminal virtual.
 
 ## 📖 Visão Executiva (Contexto Clínico)
 
