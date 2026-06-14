@@ -2,7 +2,6 @@ import os
 from supabase import create_client, Client
 from dotenv import load_dotenv
 
-# Carrega as variáveis de ambiente do arquivo .env
 load_dotenv()
 
 def get_supabase_client() -> Client:
