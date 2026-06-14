@@ -7,8 +7,8 @@ load_dotenv()
 
 def get_supabase_client() -> Client:
     """Instancia e retorna o cliente de comunicação com o Supabase."""
-    url = os.environ.get("https://qlrwqzyztxwhuqkzwpzk.supabase.co")
-    key = os.environ.get("sb_publishable_LNjB1Cvb6L2Yz5vlX2crAg_cscvCLJw")
+    url = os.environ.get("SUPABASE_URL")
+    key = os.environ.get("SUPABASE_KEY")
     
     if not url or not key:
         raise ValueError("Credenciais do Supabase ausentes no ambiente de execução.")
